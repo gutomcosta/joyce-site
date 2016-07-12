@@ -106,7 +106,7 @@
                     <h2 class="section-heading">O que posso fazer por você hoje?</h2>
                     <hr class="light">
 
-                    <p class="text-faded">Uma assistente pessoal remoto, pode auxiliar e resolver diversas tarefas em seu dia a dia ou para seu negócio. Envie suas  tarefas  via email ou Whastapp <b>(21) 98357-7834</b>.</p>
+                    <p class="text-faded">Uma assistente pessoal remoto, pode auxiliar e resolver diversas tarefas em seu dia a dia ou para seu negócio. Envie suas  tarefas  via email ou Whatsapp <b>(21) 98357-7834</b>.</p>
                 </div>
             </div>
         </div>
@@ -401,18 +401,32 @@
     <section id="contact">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
+                <div class="col-lg-5 text-center">
                     <h2 class="section-heading">Entre em contato!</h2>
                     <hr class="primary">
                     <p>Gostou da ideia? Entre em contato. Envie um email ou uma mensagem pelo whatsapp, se preferir, faça uma ligação mesmo. Retornamos o mais rápido possível.</p>
-                </div>
-                <div class="col-lg-4 col-lg-offset-2 text-center">
+
                     <i class="fa fa-phone fa-3x wow bounceIn"></i>
                     <p>21 98357-7834</p>
-                </div>
-                <div class="col-lg-4 text-center">
                     <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
                     <p><a href="mailto:joyce@joycecoeli.com.br">falecom@joycecoeli.com.br</a></p>
+                </div>
+                <div class="col-lg-7">
+                        <form method="POST" id="contact-form" class="form-horizontal" action="http://www.joycecoeli.com.br/cgi-bin/FormMail.pl" onSubmit="alert('Obrigado pelo contato!');">
+                            <div class="form-group">
+                            <input type="text" name="Name" id="Name" class="form-control wow fadeInUp" placeholder="Nome" required/>
+                            </div>
+                            <div class="form-group">
+                            <input type="text" name="Email" id="Email" class="form-control wow fadeInUp" placeholder="Email" required/>
+                            </div>                  
+                            <div class="form-group">
+                            <textarea name="Message" rows="10" cols="20" id="Message" class="form-control input-message wow fadeInUp"  placeholder="Mensagem" required></textarea>
+                            </div>
+                            <input type="hidden" name="recipient" value=" falecom@joycecoeli.com.br"/ >
+                            <div class="form-group">
+                            <input type="submit" name="submit" value="Submit" class="btn btn-primary" />
+                            </div>
+                        </form>     
                 </div>
             </div>
         </div>
